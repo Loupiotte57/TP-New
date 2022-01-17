@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* prend la taille de mon conteneur: Pour enlever les paramètres par défault du navigateur*/
+}
+@font-face {
+  font-family: "kavoon";
+  src: url(fonts/Kavoon-Regular.ttf);
+}
+
+body {
+  height: 100vh;
+  overflow: hidden; /*quand ça déborde, j'utilise l'overflow avec la propriété hidden pour cacher la barre de scroll*/
+}
+
+p {
+  font-family: "kavoon";
+  padding: 0px 20px;
+}
+header {
+  background-color: yellow;
+  text-align: center;
+  /* font-family: "head"; */
+  /* font-family: "Indie Flower", cursive; */
+  font-family: "kavoon";
+  height: 20vh;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  background-color: yellow;
+  height: 80px;
+}
+
+li {
+  border: 2px solid black;
+  width: 20%;
+  padding: 10px 0px;
+  margin: auto;
+}
+li a:hover {
+  color: rgb(0, 255, 21);
+  animation-name: bigger;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+}
+@keyframes bigger {
+  0% {
+    font-size: 1rem;
+  }
+  50% {
+    font-size: 2rem;
+  }
+  100% {
+    font-size: 1rem;
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: palegoldenrod;
+  border: 2px solid black;
+  width: 20%;
+  height: 75vh;
+  padding: 20px 10px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+}
+
+
+#section5 {
+  background-image: linear-gradient(yellow, green, red);
+}
+#section1 {
+  background-image: linear-gradient(red, green, yellow);
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  text-align: center;
+  background-color: yellow;
+  height: 5vh;
+  font-size: 1rem;
+  line-height: 5vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+
